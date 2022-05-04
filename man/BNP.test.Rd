@@ -26,7 +26,7 @@ A list with three items. The first element (\code{sampling.parameters})
 \description{
 Given two vectors of numerical values, this function returns the
 result for Bayesian nonparametric hypothesis testing for paired
-samples, performing an analytical and graphical comparison of the
+samples \insertCite{@proposed by @luz_adriana;textual}{Rdpack} , performing an analytical and graphical comparison of the
 marginal distributions of the data set.
 }
 \note{
@@ -34,7 +34,9 @@ For a proper execution of the function it is required
 that the data vectors have the same length, otherwise the function
 will return an error message.
 }
-\examples{
+\references{
+\insertAllCited{}
+
 
 \dontrun{
 x <- rnorm(30,3,2)
@@ -52,6 +54,4 @@ x1 <- y[,1]
 y1 <- y[,2]
 BNP.test(x1, y1, n.mcm=10000)
 }
-
-
 }

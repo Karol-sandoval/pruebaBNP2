@@ -4,7 +4,7 @@
 #' @description
 #' Given two vectors of numerical values, this function returns the
 #' result for Bayesian nonparametric hypothesis testing for paired
-#' samples, performing an analytical and graphical comparison of the
+#' samples \insertCite{@proposed by @luz_adriana;textual}{Rdpack} , performing an analytical and graphical comparison of the
 #' marginal distributions of the data set.
 #'
 #'
@@ -28,6 +28,7 @@
 #' @importFrom mvtnorm dmvnorm
 #' @importFrom truncnorm rtruncnorm
 #' @importFrom truncnorm dtruncnorm
+#' @importFrom Rdpack reprompt
 #' @import plotly
 #' @import ggplot2
 #' @import dplyr
@@ -38,7 +39,9 @@
 #' will return an error message.
 #'
 #'
-#' @examples
+#' @references
+#' \insertAllCited{}
+#'
 #'
 #' \dontrun{
 #' x <- rnorm(30,3,2)
